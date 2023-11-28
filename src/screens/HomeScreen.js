@@ -42,14 +42,14 @@ const styles = StyleSheet.create({
 
   },
   flatListContainer: {
-    flexDirection: 'column', // Align items vertically
-    justifyContent: 'space-between', // Add space between items
+    flexDirection: 'column', 
+    justifyContent: 'space-between', 
   },
   itemContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 8, // Add vertical margin
+    marginVertical: 8, 
     padding: 16,
     backgroundColor: '#5FB49C',
     borderRadius: 8,

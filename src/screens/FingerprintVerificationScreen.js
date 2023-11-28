@@ -15,18 +15,16 @@ const FingerprintVerificationScreen = () => {
       }
     );
 
-    // Cleanup the listener when the component unmounts
+   
     return () => {
       fingerprintListener.remove();
     };
-  }, []); // The empty dependency array ensures that this effect runs only once on mount
-
+  }, []); 
   const authenticateFingerprint = async () => {
     try {
       const success = await NativeModules.ReactNativeFingerprintScanner.authenticate();
       if (success) {
         setStatus('Authentication success');
-        // Navigate to 'Home' component upon successful authentication
         navigation.navigate('Home');
       } else {
         setStatus('Authentication failed');
